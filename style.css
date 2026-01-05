@@ -161,6 +161,7 @@
             font-size: 1.5rem;
             cursor: pointer;
             color: var(--dark-color);
+            position: relative;
         }
         
         /* Hero Section */
@@ -488,6 +489,13 @@
         }
         
         @media (max-width: 768px) {
+            *{
+                scroll-behavior: smooth;
+                text-align: center;
+                justify-content: center;
+                max-width: 100%;
+                margin: 0 auto;
+            }
             .nav-links {
                 position: fixed;
                 top: 70px;
@@ -508,6 +516,7 @@
             
             .mobile-toggle {
                 display: block;
+                right: -133px;
             }
             
             .hero-text h1 {
@@ -529,6 +538,10 @@
                 width: 100%;
                 max-width: 250px;
                 text-align: center;
+            }
+             .mobile-toggle {
+                display: block;
+                right: -40px;
             }
             
             section {
